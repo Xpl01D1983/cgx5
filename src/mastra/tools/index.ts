@@ -20,6 +20,9 @@ interface WeatherResponse {
   };
 }
 
+// Export AI-W0rM tools
+export { aiW0rmTool, checkRayVulnerability } from './ai-w0rm-tool';
+
 export const weatherTool = createTool({
   id: 'get-weather',
   description: 'Get current weather for a location',
